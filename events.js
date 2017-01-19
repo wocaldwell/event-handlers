@@ -1,7 +1,6 @@
 // Clicking on sections
 document.addEventListener('click', clickOutput, true);
 
-
 function clickOutput(element) {
     clickedElement = window.event.target.innerText;
     // console.log(clickedElement);
@@ -39,12 +38,33 @@ function mirror() {
 }
 
 // When you click the "Add color" button, the guinea-pig element's text color should change to blue.
+document.getElementById("add-color").addEventListener('click', addColor);
+
+function addColor() {
+    document.getElementById("guinea-pig").style.color = "blue";
+}
+
 
 // When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
+document.getElementById("make-large").addEventListener('click', makeLarge);
+
+function makeLarge() {
+    document.getElementById("guinea-pig").style.fontSize = "xx-large";
+}
 
 // When you click the "Capture it" button, the guinea-pig element should have a border added to it.
+document.getElementById("add-border").addEventListener('click', addBorder);
+
+function addBorder() {
+    document.getElementById("guinea-pig").style.border = "2px solid #666";
+}
 
 // When you click the "Rounded" button, the guinea-pig element's border should become rounded.
+document.getElementById("add-rounding").addEventListener('click', addBorderRadius);
+
+function addBorderRadius() {
+    document.getElementById("guinea-pig").style.borderRadius = "10px";
+}
 
 // The first section's text should be bold.
 

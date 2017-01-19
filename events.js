@@ -30,8 +30,13 @@ function mouseOutH1() {
     document.getElementById("output-target").innerHTML = "You left me!!";
 }
 
-
 // When you type characters into the input field, the output element should mirror the text in the input field.
+document.getElementById("keypress-input").addEventListener('keyup', mirror);
+
+function mirror() {
+    var keyPressed = document.getElementById("keypress-input").value;
+    document.getElementById("output-target").innerHTML = keyPressed;
+}
 
 // When you click the "Add color" button, the guinea-pig element's text color should change to blue.
 

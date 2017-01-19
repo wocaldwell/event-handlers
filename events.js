@@ -10,18 +10,25 @@ function clickOutput(element) {
 
 // When the mouse is over the h1 tag, the output element should contain the text "You moved your mouse over the header".
 document.getElementById("page-title").addEventListener('mouseenter', mouseOverH1);
-document.getElementById("page-title").addEventListener('mouseout', mouseOutH1);
 
 function mouseOverH1() {
     document.getElementById("output-target").innerHTML = "You moved your mouse over the header";
 }
 
-function mouseOutH1() {
-    document.getElementById("output-target").innerHTML = "";
-}
+// This is not needed, but I did it before the reading the next task
+    // document.getElementById("page-title").addEventListener('mouseout', mouseOutH1);
+
+    // function mouseOutH1() {
+    //     document.getElementById("output-target").innerHTML = "";
+    // }
+
 
 // When the mouse leaves the h1 tag, the output element should contain the text "You left me!!".
+document.getElementById("page-title").addEventListener('mouseout', mouseOutH1);
 
+function mouseOutH1() {
+    document.getElementById("output-target").innerHTML = "You left me!!";
+}
 
 
 // When you type characters into the input field, the output element should mirror the text in the input field.

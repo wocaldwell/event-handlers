@@ -67,7 +67,14 @@ function addBorderRadius() {
 }
 
 // The first section's text should be bold.
+document.getElementsByClassName("article-section")[0].classList.add("bold");
 
 // The last section's text should be bold and italicized.
+var lastArticleIndex = document.getElementsByClassName("article-section").length - 1;
+document.getElementsByClassName("article-section")[lastArticleIndex].classList.add("ital");
 
 // Make the buttons stop appearing next to each other as inline elements. Change them into block elements.
+var buttons = document.getElementsByTagName("button");
+for (i = 0; i < buttons.length; i++) {
+    buttons[i].classList.add("block");
+}

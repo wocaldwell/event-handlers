@@ -1,0 +1,14 @@
+/*The first section's text should be bold.*/
+.bold {
+    font-weight: bold;
+}
+
+/*The last section's text should be bold and italicized.*/
+.ital {
+    font-style: italic;
+}
+
+/*Make the buttons stop appearing next to each other as inline elements. Change them into block elements.*/
+.block {
+    display: block;
+}
